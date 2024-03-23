@@ -1,18 +1,23 @@
 package com.mentoring.mju.v1.racing.domain.car.Move;
 
-import ch.qos.logback.core.encoder.JsonEscapeUtil;
-import com.mentoring.mju.v1.racing.domain.car.Car;
-
 import java.util.Random;
 
-public class CarRandomNumber implements CarRandomNumberRepository {
-    @Override
-    public void saveNumber(CarRandomNumber randomNumber) {
-        //무작위 숫자 뽑기
-        Random random = new Random();
-        int randomNumberStore = random.nextInt(0, 9);
-        if (randomNumberStore > 3) {
-        }
+public class CarRandomNumber {
 
+    private int[] randomNumberStore;
+
+    public void generateNumbers(int chanceNumber) {
+        randomNumberStore = new int[chanceNumber]; // 배열 초기화
+
+        Random random = new Random();
+        for (int i = 0; i < chanceNumber; i++) {
+            randomNumberStore[i] = random.nextInt(10); // 0부터 9까지의 임의의 정수 생성
+        }
+    }
+
+    public void printNumbers() {
+        for (int number : randomNumberStore) {
+            System.out.println(number);
+        }
     }
 }

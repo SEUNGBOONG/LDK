@@ -4,7 +4,7 @@ package com.mentoring.mju.v1.racing.domain.car;
 
 
 
-import com.mentoring.mju.v1.racing.domain.car.Move.CarMove;
+//import com.mentoring.mju.v1.racing.domain.car.Move.CarMove;
 
 /**
  * 자동차 입력을 받는다 쉼표로 구분 -> InputView에서 자동차 이름을 물어보고  Cars에서 데이터를 저장한다.  쉼표로 구분하게 끔 구현
@@ -28,22 +28,22 @@ import com.mentoring.mju.v1.racing.domain.car.Move.CarMove;
 
 public class Car {
 
-    private final Car carName;
-    private CarMove carMove;
-
-
-    public Car(Car carName, CarMove carMove) {
-        this.carName = carName;
-        this.carMove = carMove;
-    }
-
-    public Car getCarName() {
-        return carName;
-    }
-
-    public CarMove getCarMove() {
-        return carMove;
-    }
+//    private final Car carName;
+//    private CarMove carMove;
+//
+//
+//    public Car(Car carName, CarMove carMove) {
+//        this.carName = carName;
+//        this.carMove = carMove;
+//    }
+//
+//    public Car getCarName() {
+//        return carName;
+//    }
+//
+//    public CarMove getCarMove() {
+//        return carMove;
+//    }
 }
 
 
